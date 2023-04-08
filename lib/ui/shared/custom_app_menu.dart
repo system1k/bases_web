@@ -14,7 +14,7 @@ class CustomAppMenu extends StatelessWidget {
           CustomFlatButton(
 
             text: 'Contador Stateful', 
-            onPressed: (){},
+            onPressed: () => Navigator.pushNamed(context, '/stateful'),
             color: Colors.black
           ),
 
@@ -22,7 +22,7 @@ class CustomAppMenu extends StatelessWidget {
 
           CustomFlatButton(
             text: 'Contador Provider', 
-            onPressed: (){},
+            onPressed: () => Navigator.pushNamed(context, '/provider'),
             color: Colors.black
           ),
 
@@ -30,7 +30,7 @@ class CustomAppMenu extends StatelessWidget {
 
           CustomFlatButton(
             text: 'Otra ruta', 
-            onPressed: (){},
+            onPressed: () => Navigator.pushNamed(context, '/otherRoute'),
             color: Colors.black
           )
 

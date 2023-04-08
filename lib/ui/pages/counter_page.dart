@@ -24,6 +24,8 @@ class _CounterPageState extends State<CounterPage> {
 
           const Spacer(),
 
+          const Text('Contador Stateful', style: TextStyle(fontSize: 20)),
+
           FittedBox(
             fit: BoxFit.contain,
             child: Padding(

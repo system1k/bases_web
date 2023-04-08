@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bases_web/ui/pages/counter_pages.dart';
+import 'package:bases_web/routes/routes_generator.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,13 +8,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'RoutesApp',
       initialRoute: '/stateful',
-      routes: {
-        '/stateful' : (_) => const CounterPage()
-      }
+      onGenerateRoute: RoutesGenerator.generateRoute
     );
   }
 }
