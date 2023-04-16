@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:bases_web/ui/layout/main_layout_page.dart';
 import 'package:bases_web/routes/routes_generator.dart';
+import 'package:bases_web/services/navigation_service.dart';
 
 void main() => runApp(const MyApp());
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'RoutesApp',
       initialRoute: '/stateful',
       onGenerateRoute: RoutesGenerator.generateRoute,
+      navigatorKey: navigationService.navigatorKey,
       builder: (_, child) => MainLayoutPage(child: child ?? Container())
     );
   }
