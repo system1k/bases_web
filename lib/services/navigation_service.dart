@@ -8,7 +8,7 @@ class _NavigationService {
     return navigatorKey.currentState!.pushNamed(routeName);
   }
 
-  void pop(String routeName) {
+  void pop() {
     return navigatorKey.currentState!.pop();
   }
 

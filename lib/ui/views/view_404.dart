@@ -18,7 +18,7 @@ class View404 extends StatelessWidget {
 
           CustomFlatButton(
             text: 'Regresar', 
-            onPressed: () => navigationService.navigateTo('/stateful'),
+            onPressed: () => navigationService.pop(),
           )    
                     
         ]
