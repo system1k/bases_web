@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:bases_web/ui/pages/pages.dart';
+import 'package:bases_web/ui/views/views.dart';
 
 class RoutesGenerator {
 
@@ -9,13 +9,13 @@ class RoutesGenerator {
     switch (settings.name) {
 
       case '/stateful':
-        return _pageRoute(const CounterPage(), '/stateful');
+        return _pageRoute(const CounterView(), '/stateful');
 
       case '/provider':
-        return _pageRoute(const CounterProviderPage(), '/provider');
+        return _pageRoute(const CounterProviderView(), '/provider');
 
       default:
-        return _pageRoute(const Page404(), '/404');
+        return _pageRoute(const View404(), '/404');
 
     }    
     
