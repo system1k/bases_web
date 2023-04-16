@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:bases_web/ui/pages/pages.dart';
 
@@ -34,8 +34,8 @@ class RoutesGenerator {
         : CupertinoPageTransition(
             primaryRouteAnimation: animation,
             secondaryRouteAnimation: __,
-            child: child,
-            linearTransition: true
+            linearTransition: true,
+            child: child
           )
     );
 
