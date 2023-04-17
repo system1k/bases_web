@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bases_web/locator.dart';
 import 'package:bases_web/services/navigation_service.dart';
 import 'package:bases_web/ui/shared/custom_flat_button.dart';
 
@@ -18,7 +19,7 @@ class View404 extends StatelessWidget {
 
           CustomFlatButton(
             text: 'Regresar', 
-            onPressed: () => navigationService.pop(),
+            onPressed: () => locator<NavigationService>().pop(),
           )    
                     
         ]
