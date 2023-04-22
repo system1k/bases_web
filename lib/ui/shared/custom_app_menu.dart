@@ -48,6 +48,22 @@ class _TabletDesktopMenu extends StatelessWidget {
             text: 'Otra ruta', 
             onPressed: () => locator<NavigationService>().navigateTo('/otherRoute'),
             color: Colors.black
+          ),
+
+          const SizedBox(width: 10),
+
+          CustomFlatButton(
+            text: 'Stateful 100', 
+            onPressed: () => locator<NavigationService>().navigateTo('/stateful/100'),
+            color: Colors.black
+          ),
+
+          const SizedBox(width: 10),
+
+          CustomFlatButton(
+            text: 'Provider 100', 
+            onPressed: () => locator<NavigationService>().navigateTo('/provider?q=200'),
+            color: Colors.black
           )
 
         ],

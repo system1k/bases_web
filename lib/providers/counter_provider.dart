@@ -4,6 +4,12 @@ class CounterProvider extends ChangeNotifier {
 
   int _counter = 10;
 
+  CounterProvider(String base) {
+    if(int.tryParse(base) != null) {
+      _counter = int.parse(base);
+    }
+  }
+
   get counter => _counter;
 
   void increment(){

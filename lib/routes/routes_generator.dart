@@ -9,10 +9,10 @@ class RoutesGenerator {
     switch (settings.name) {
 
       case '/stateful':
-        return _pageRoute(const CounterView(), '/stateful');
+        return _pageRoute(const CounterView(base: '5'), '/stateful');
 
       case '/provider':
-        return _pageRoute(const CounterProviderView(), '/provider');
+        return _pageRoute(const CounterProviderView(base: '10'), '/provider');
 
       default:
         return _pageRoute(const View404(), '/404');
